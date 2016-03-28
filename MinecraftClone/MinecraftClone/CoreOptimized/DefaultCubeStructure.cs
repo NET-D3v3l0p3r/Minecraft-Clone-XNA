@@ -41,7 +41,7 @@ namespace MinecraftClone.CoreII
         public void Initialize()
         {
             TextureVector2 = GlobalModels.IndexTextureTuple[Id];
-            Transformation = Matrix.CreateScale(0.5f) * Matrix.CreateTranslation(Position + ChunkTranslation);
+            Transformation = Matrix.CreateScale(1) * Matrix.CreateTranslation(Position + ChunkTranslation);
             BoundingBox = BoundingBoxRenderer.UpdateBoundingBox(GlobalModels.IndexModelTuple[0], Transformation);
         }
 
